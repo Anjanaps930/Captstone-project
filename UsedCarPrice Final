@@ -5,7 +5,7 @@
     "colab": {
       "provenance": [],
       "mount_file_id": "1hV2_MzVdV_B4dgUppHLU0cua5hrQQed9",
-      "authorship_tag": "ABX9TyM/XgfzURsBlRth0UM2Vi6r",
+      "authorship_tag": "ABX9TyN7ZERL8lmwMdLVoVKYcy+/",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -5847,7 +5847,7 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "Z8N_e7SMryk_",
-        "outputId": "bf18ca35-69dc-43e2-fcc7-63da9c88df9d"
+        "outputId": "ab8b862c-9ed3-4333-8e35-40a7be532f86"
       },
       "execution_count": null,
       "outputs": [
@@ -5898,7 +5898,7 @@
         "class HousePricePredictionApp:\n",
         "    def __init__(self, master):\n",
         "        self.master = master\n",
-        "        self.master.title('UsedCarPrice House Price Prediction')\n",
+        "        self.master.title('UsedCar Price Prediction')\n",
         "        self.data = pd.read_csv('train-data.csv')\n",
         "        self.sliders = []\n",
         "\n",
@@ -5929,7 +5929,7 @@
         "    def predict_price(self):\n",
         "        inputs = [float(slider.get()) for slider, _ in self.sliders]\n",
         "        price = self.model.predict([inputs])\n",
-        "        messagebox.showinfo('Predicted Price', f'The predicted house price is ${price[0]:.2f}')\n",
+        "        messagebox.showinfo('Predicted Price', f'The predicted UsedCar price is ${price[0]:.2f}')\n",
         "\n",
         "if __name__ == '__main__':\n",
         "    root = tk.Tk()\n",
